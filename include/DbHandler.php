@@ -1078,6 +1078,9 @@ class DbHandler {
             $tmp["features"]["baterai"]["positif"] = rand(2,15);
             $tmp["features"]["baterai"]["negatif"] = rand(1,4);
             $tmp["features"]["baterai"]["netral"] = rand(1,21);
+            $tmp["features"]["tongsis"]["positif"] = rand(2,15);
+            $tmp["features"]["tongsis"]["negatif"] = rand(1,4);
+            $tmp["features"]["tongsis"]["netral"] = rand(1,21);
             
             array_push($ret, $tmp);
         }
@@ -1129,6 +1132,9 @@ class DbHandler {
             $tmp["features"]["baterai"]["positif"] = rand(2,15);
             $tmp["features"]["baterai"]["negatif"] = rand(1,4);
             $tmp["features"]["baterai"]["netral"] = rand(1,21);
+            $tmp["features"]["tongsis"]["positif"] = rand(2,15);
+            $tmp["features"]["tongsis"]["negatif"] = rand(1,4);
+            $tmp["features"]["tongsis"]["netral"] = rand(1,21);
 
             array_push($ret, $tmp);
         }
