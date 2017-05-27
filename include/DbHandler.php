@@ -1065,10 +1065,19 @@ class DbHandler {
             $tmp["top_merchant"] = $task["top_merchant"];
             $tmp["average_rate"] = $task["average_rate"];
             $tmp["features"] = array();
-            $tmp["features"]["lensa"] = rand(0,51);
-            $tmp["features"]["case"] = rand(2,62);
-            $tmp["features"]["baterai"] = rand(1, 71);
-            $tmp["features"]["tongsis"] = rand(0,21);
+            $tmp["features"]["lensa"] = array();
+            $tmp["features"]["case"] = array();
+            $tmp["features"]["baterai"] = array();
+            $tmp["features"]["tongsis"] = array();
+            $tmp["features"]["lensa"]["positif"] = rand(2,15);
+            $tmp["features"]["lensa"]["negatif"] = rand(1,4);
+            $tmp["features"]["lensa"]["netral"] = rand(1,21);
+            $tmp["features"]["case"]["positif"] = rand(2,15);
+            $tmp["features"]["case"]["negatif"] = rand(1,4);
+            $tmp["features"]["case"]["netral"] = rand(1,21);
+            $tmp["features"]["baterai"]["positif"] = rand(2,15);
+            $tmp["features"]["baterai"]["negatif"] = rand(1,4);
+            $tmp["features"]["baterai"]["netral"] = rand(1,21);
             
             array_push($ret, $tmp);
         }
@@ -1107,10 +1116,19 @@ class DbHandler {
             $tmp["top_merchant"] = $task["top_merchant"];
             $tmp["average_rate"] = $task["average_rate"];
             $tmp["features"] = array();
-            $tmp["features"]["lensa"] = rand(0,51);
-            $tmp["features"]["case"] = rand(2,62);
-            $tmp["features"]["baterai"] = rand(1, 71);
-            $tmp["features"]["tongsis"] = rand(0,21);
+            $tmp["features"]["lensa"] = array();
+            $tmp["features"]["case"] = array();
+            $tmp["features"]["baterai"] = array();
+            $tmp["features"]["tongsis"] = array();
+            $tmp["features"]["lensa"]["positif"] = rand(2,15);
+            $tmp["features"]["lensa"]["negatif"] = rand(1,4);
+            $tmp["features"]["lensa"]["netral"] = rand(1,21);
+            $tmp["features"]["case"]["positif"] = rand(2,15);
+            $tmp["features"]["case"]["negatif"] = rand(1,4);
+            $tmp["features"]["case"]["netral"] = rand(1,21);
+            $tmp["features"]["baterai"]["positif"] = rand(2,15);
+            $tmp["features"]["baterai"]["negatif"] = rand(1,4);
+            $tmp["features"]["baterai"]["netral"] = rand(1,21);
 
             array_push($ret, $tmp);
         }
