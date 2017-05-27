@@ -1067,21 +1067,25 @@ class DbHandler {
             $tmp["features"] = array();
             $temps = array();
             $temps["category"]= "Baterai";
+            $temps["image_url"] = "http://apibukalapak.azurewebsites.net/image/ic_batery.png";
             $temps["positive"] = rand(1,24);
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
             array_push($tmp["features"], $temps);
             $temps["category"]= "Lensa";
+            $temps["image_url"] = "http://apibukalapak.azurewebsites.net/image/ic_lensa.png";
             $temps["positive"] = rand(1,24);
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
             array_push($tmp["features"], $temps);
-            $temps["category"]= "Case";
+            $temps["category"]= "Package";
+            $temps["image_url"] = "http://apibukalapak.azurewebsites.net/image/ic_package.png";
             $temps["positive"] = rand(1,24);
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
             array_push($tmp["features"], $temps);
             $temps["category"]= "Go Pro";
+            $temps["image_url"] = "http://apibukalapak.azurewebsites.net/image/ic_gopro.png";
             $temps["positive"] = rand(1,24);
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
@@ -1126,26 +1130,29 @@ class DbHandler {
             $tmp["features"] = array();
             $temps = array();
             $temps["category"]= "Baterai";
+            $temps["image_url"] = "http://apibukalapak.azurewebsites.net/image/ic_batery.png";
             $temps["positive"] = rand(1,24);
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
             array_push($tmp["features"], $temps);
             $temps["category"]= "Lensa";
+            $temps["image_url"] = "http://apibukalapak.azurewebsites.net/image/ic_lensa.png";
             $temps["positive"] = rand(1,24);
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
             array_push($tmp["features"], $temps);
-            $temps["category"]= "Case";
+            $temps["category"]= "Package";
+            $temps["image_url"] = "http://apibukalapak.azurewebsites.net/image/ic_package.png";
             $temps["positive"] = rand(1,24);
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
             array_push($tmp["features"], $temps);
             $temps["category"]= "Go Pro";
+            $temps["image_url"] = "http://apibukalapak.azurewebsites.net/image/ic_gopro.png";
             $temps["positive"] = rand(1,24);
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
             array_push($tmp["features"], $temps);
-
 
             array_push($ret, $tmp);
         }
@@ -1173,13 +1180,15 @@ class DbHandler {
             $tmp["sentimen"] = $task["sentimen"];
             $tmp["features"] = array();
             $temps = array();
-            $fitur = $input = array("Lensa", "Baterai", "Case", "Tongsis");
+            $fitur = array("Lensa", "Baterai", "Package", "Go Pro");
+            $url = array("http://apibukalapak.azurewebsites.net/image/ic_lensa.png","http://apibukalapak.azurewebsites.net/image/ic_batery.png","http://apibukalapak.azurewebsites.net/image/ic_package.png","http://apibukalapak.azurewebsites.net/image/ic_gopro.png");
             $n = rand(0,1);
             $rand1 = 100;
             for($i=0;$i<=$n;$i++){
                 $r1 = rand(0,3);
                 while($r1!=$rand1){
                     $temps["category"] = $fitur[$r1];
+                    $temps["image_url"] = $url[$r1];
                     $rand1 = $r1;
                     array_push($tmp["features"], $temps);
                 }
