@@ -1081,7 +1081,7 @@ class DbHandler {
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
             array_push($tmp["features"], $temps);
-            $temps["category"]= "Tongsis";
+            $temps["category"]= "Go Pro";
             $temps["positive"] = rand(1,24);
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
@@ -1140,7 +1140,7 @@ class DbHandler {
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
             array_push($tmp["features"], $temps);
-            $temps["category"]= "Tongsis";
+            $temps["category"]= "Go Pro";
             $temps["positive"] = rand(1,24);
             $temps["negative"] = rand(1,6);
             $temps["netral"] = rand(3,17);
