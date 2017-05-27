@@ -1170,6 +1170,20 @@ class DbHandler {
             $tmp["product_id"] = $task["product_id"];
             $tmp["positive_votes"] = $task["positive_votes"];
             $tmp["negative_votes"] = $task["negative_votes"];
+            $tmp["sentimen"] = $task["sentimen"];
+            $tmp["features"] = array();
+            $temps = array();
+            $fitur = $input = array("Lensa", "Baterai", "Case", "Tongsis");
+            $n = rand(0,1);
+            $rand1 = 100;
+            for($i=0;$i<=$n;$i++){
+                $r1 = rand(0,3);
+                while($r1!=$rand1){
+                    $temps["category"] = $fitur[$r1];
+                    $rand1 = $r1;
+                    array_push($tmp["features"], $temps);
+                }
+            }
             array_push($ret, $tmp);
         }
         return $ret;
